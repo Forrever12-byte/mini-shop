@@ -15,11 +15,15 @@
 
         <div id="product-grid" class="grid grid-cols-2 md:grid-cols-3 gap-2 lg:gap-5 lg:w-[60%]"></div>
 
-        <section id="cart" class="fixed bottom-0 left-0 w-full z-50 bg-white rounded-t-2xl max-h-[70vh] flex flex-col translate-y-full transition-transform duration-300 md:top-0 md:left-auto md:right-0 md:w-[380px] md:h-full md:max-h-none md:rounded-t-none md:rounded-l-2xl md:translate-y-0 md:translate-x-full lg:relative lg:h-[50%] lg:w-[35%] lg:translate-x-0 lg:p-5">
+        <section id="cart" class="fixed bottom-0 left-0 w-full z-50 bg-white rounded-t-2xl max-h-[70vh] flex flex-col translate-y-full transition-transform duration-300 md:top-0 md:left-auto md:right-0 md:w-[380px] md:h-full md:max-h-none md:rounded-t-none md:rounded-l-2xl lg:rounded-2xl md:translate-y-0 md:translate-x-full lg:relative lg:h-[50%] lg:w-[35%] lg:translate-x-0 lg:p-5">
 
             <div class="flex justify-between items-center p-4 border-b border-accent mb-3 lg:hidden">
                 <h2 class="font-bold">Your cart</h2>
                 <button id="close-cart" class="text-sm">✕ Close</button>
+            </div>
+
+            <div class="hidden p-2 mb-3 lg:flex ">
+                <h2 class="font-bold text-center text-btn-primary text-2xl">Your cart</h2>
             </div>
 
             <ul id="cart-list" class="bg-white rounded-lg overflow-hidden border-1 border-accent flex-1 overflow-y-auto px-4 w-[95%] mx-auto">
