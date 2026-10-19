@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/output.css">
+    <title>Mini Shop With Cart</title>
+</head>
+<body class="bg-bg-primary w-full pt-5 pb-28">
+
+    <h1 class="mb-5 font-bold text-2xl text-btn-primary w-[90%] lg:w-[80%] mx-auto">Mini Shop</h1>
+
+    <section class="w-[90%] lg:w-[80%] mx-auto p-3 lg:flex lg:justify-between lg:gap-5">
+
+        <div id="product-grid" class="grid grid-cols-2 md:grid-cols-3 gap-2 lg:gap-5 lg:w-[60%]"></div>
+
+        <section id="cart" class="fixed bottom-0 left-0 w-full z-50 bg-white rounded-t-2xl max-h-[70vh] flex flex-col translate-y-full transition-transform duration-300 md:top-0 md:left-auto md:right-0 md:w-[380px] md:h-full md:max-h-none md:rounded-t-none md:rounded-l-2xl md:translate-y-0 md:translate-x-full lg:relative lg:h-[50%] lg:w-[35%] lg:translate-x-0 lg:p-5">
+
+            <div class="flex justify-between items-center p-4 border-b border-accent mb-3 lg:hidden">
+                <h2 class="font-bold">Your cart</h2>
+                <button id="close-cart" class="text-sm">✕ Close</button>
+            </div>
+
+            <ul id="cart-list" class="bg-white rounded-lg overflow-hidden border-1 border-accent flex-1 overflow-y-auto px-4 w-[95%] mx-auto">
+
+            </ul>
+
+            <p id="total" class="bg-text-primary text-accent font-bold rounded-lg p-2 m-4"></p>
+        </section>
+    </section>
+
+    <div id="cart-bar" class="fixed bottom-0 left-0 w-full z-30 bg-text-primary flex items-center gap-3 px-4 py-3 lg:hidden"> 
+        <div class="flex-1">
+            <p id="cart-count" class="text-xs text-white/70">0 items</p>
+            <p id="bar-total" class="text-lg font-bold text-accent">₦0</p>
+        </div>
+        <button id="open-cart" class="bg-btn-primary text-white font-semibold px-4 py-2 rounded-lg">View cart</button>
+    </div>
+
+    <div id="overlay" class="fixed inset-0 z-40 bg-black/50 hidden"></div>
+
+    
+
+ <script src="index.js"></script>
+</body>
+</html>
