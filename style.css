@@ -45,6 +45,11 @@
     border-radius: 5px;
     width: 90%;
     margin-inline: auto;
+    transition: .3s ease-in-out;
+}
+
+.cart-btn:hover {
+    background-color: #fd5112;
 }
 
 .product-line {
@@ -77,4 +82,8 @@
     border: 1px solid #FF6B35;
     color: #FF6B35;
     font-weight: bold;
+}
+
+button {
+    cursor: pointer;
 }
