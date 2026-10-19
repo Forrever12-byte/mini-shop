@@ -17,8 +17,6 @@
     --text-sm--line-height: calc(1.25 / 0.875);
     --text-lg: 1.125rem;
     --text-lg--line-height: calc(1.75 / 1.125);
-    --text-xl: 1.25rem;
-    --text-xl--line-height: calc(1.75 / 1.25);
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
     --font-weight-semibold: 600;
@@ -412,44 +410,6 @@
     .hover\:bg-\[\#fd5112\]:hover {
       background-color: #fd5112;
     }
-    .hover\:bg-\[btn-primary\/120\]:hover {
-      background-color: btn-primary/120;
-    }
-    .hover\:bg-bg-primary:hover {
-      background-color: var(--color-bg-primary);
-    }
-    .hover\:bg-bg-primary\/80:hover {
-      background-color: color-mix(in srgb, #FFF8E7 80%, transparent);
-    }
-    @supports (color: color-mix(in lab, red, red)) {
-      .hover\:bg-bg-primary\/80:hover {
-        background-color: color-mix(in oklab, var(--color-bg-primary) 80%, transparent);
-      }
-    }
-    .hover\:bg-btn-primary\/12:hover {
-      background-color: color-mix(in srgb, #FF6B35 12%, transparent);
-    }
-    @supports (color: color-mix(in lab, red, red)) {
-      .hover\:bg-btn-primary\/12:hover {
-        background-color: color-mix(in oklab, var(--color-btn-primary) 12%, transparent);
-      }
-    }
-    .hover\:bg-btn-primary\/80:hover {
-      background-color: color-mix(in srgb, #FF6B35 80%, transparent);
-    }
-    @supports (color: color-mix(in lab, red, red)) {
-      .hover\:bg-btn-primary\/80:hover {
-        background-color: color-mix(in oklab, var(--color-btn-primary) 80%, transparent);
-      }
-    }
-    .hover\:bg-btn-primary\/120:hover {
-      background-color: color-mix(in srgb, #FF6B35 120%, transparent);
-    }
-    @supports (color: color-mix(in lab, red, red)) {
-      .hover\:bg-btn-primary\/120:hover {
-        background-color: color-mix(in oklab, var(--color-btn-primary) 120%, transparent);
-      }
-    }
   }
   @media (width >= 48rem) {
     .md\:top-0 {
@@ -512,6 +472,9 @@
     .lg\:w-\[80\%\] {
       width: 80%;
     }
+    .lg\:w-\[90\%\] {
+      width: 90%;
+    }
     .lg\:translate-x-0 {
       --tw-translate-x: 0px;
       translate: var(--tw-translate-x) var(--tw-translate-y);
@@ -524,6 +487,10 @@
     }
     .lg\:rounded-2xl {
       border-radius: var(--radius-2xl);
+    }
+    .lg\:border {
+      border-style: var(--tw-border-style);
+      border-width: 1px;
     }
     .lg\:p-5 {
       padding: calc(var(--spacing) * 5);
